@@ -1,42 +1,173 @@
-# 📄 Automação de Tradução de Currículo
+# LaTeX Translation Automation
 
-Este projeto tem como objetivo automatizar o processo de tradução e manutenção do meu currículo. 
+AI-powered multilingual document translation and synchronization pipeline for LaTeX projects.
 
-Sempre que o currículo base for atualizado, o sistema detecta as mudanças em relação ao último commit no repositório (GitHub), traduz as novidades para o inglês e gera a versão final do currículo automaticamente.
+## Overview
 
-## 📁 Estrutura do Projeto
+LaTeX Translation Automation is a Python-based workflow that automatically translates LaTeX documents into multiple languages using Large Language Models (LLMs).
 
-Baseado na estrutura do repositório, as pastas principais são organizadas da seguinte forma:
+The project was designed to simplify the maintenance of multilingual document repositories by automating:
 
-* **`content/`**: Diretório principal de trabalho. É aqui que os arquivos com o conteúdo base do currículo ficam armazenados. **Todas as edições devem ser feitas nesta pasta.**
-* **`output/`**: Diretório onde o currículo final traduzido e formatado é gerado após a execução do script.
-* **`scripts/`**: Contém scripts auxiliares do projeto.
-* **`template/`**: Contém os modelos/templates de formatação para a estrutura visual do arquivo final.
-* **`sync.py`**: Script principal responsável por orquestrar a detecção de mudanças (diff), realizar a chamada de tradução e gerar o novo documento.
-* **`.env`**: Arquivo para variáveis de ambiente (como chaves de API do serviço de tradução que está sendo utilizado).
+* document translation
+* file synchronization
+* LaTeX generation
+* PDF compilation
+* Git integration
 
-## 🚀 Como Usar
+Although initially created for resumes and cover letters, the project is fully generic and can be used for any LaTeX-based documentation.
 
-1. **Atualize seu currículo base:**
-   Faça qualquer adição, remoção ou alteração de texto nos arquivos localizados dentro da pasta `content/`.
+---
 
-2. **Execute a sincronização:**
-   No terminal, rode o script principal:
+## Features
+
+* Automatic translation of `.tex` files
+* Multi-language synchronization
+* AI-powered translation using Gemini
+* Preservation of LaTeX syntax and commands
+* Automatic PDF generation
+* Git automation
+* Template-based document generation
+* Modular project structure
+
+---
+
+## Supported Use Cases
+
+* Resumes
+* Cover letters
+* Academic papers
+* Documentation
+* Technical reports
+* Blog posts written in LaTeX
+
+---
+
+## Project Structure
+
+```text
+latex-translation-automation/
+│
+├── content/
+│   ├── pt/
+│   ├── en/
+│   └── template/
+│
+├── prompts/
+│
+├── scripts/
+│   ├── build.py
+│   ├── git_utils.py
+│   └── sync.py
+│
+├── output/
+│
+├── .env.example
+├── .gitignore
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## How It Works
+
+1. The system detects modified files in the source language directory.
+2. Modified content is sent to Gemini for translation.
+3. Translated files are generated automatically.
+4. LaTeX documents are compiled into PDFs.
+5. Changes can optionally be committed and pushed automatically.
+
+---
+
+## Example Workflow
+
 ```bash
-   python sync.py
-   ```
+python sync.py
+```
 
-3. **Como o processo funciona?**
-   * O script `sync.py` utiliza o Git para analisar as diferenças (`git diff`) entre o seu estado atual (na pasta `content/`) e o último commit.
-   * Apenas os trechos alterados ou adicionados são enviados para a API de tradução para o inglês.
-   * O script aplica as alterações no idioma de destino e reconstrói o arquivo final, salvando-o na pasta `output/`.
+Example process:
 
-## ⚙️ Configuração e Instalação
+```text
+Portuguese content
+        ↓
+Gemini Translation
+        ↓
+Translated .tex files
+        ↓
+PDF compilation
+        ↓
+Git commit + push
+```
 
-1. Certifique-se de ter o **Python 3.x** e o **Git** devidamente instalados e configurados na sua máquina.
-2. Instale as bibliotecas necessárias (caso possua um `requirements.txt`):
+---
+
+## Installation
+
+### Clone the repository
+
 ```bash
-   pip install -r requirements.txt
-   ```
-3. Crie ou configure o arquivo `.env` na raiz do projeto com as chaves de API necessárias para realizar as traduções.
-4. Lembre-se de sempre comitar suas alterações após a geração com sucesso para que o próximo ciclo de detecção funcione corretamente!
+git clone https://github.com/yourusername/latex-translation-automation.git
+cd latex-translation-automation
+```
+
+
+## Environment Variables
+
+Create a `.env` file based on `.env.example`.
+
+Example:
+
+```env
+GEMINI_API_KEY=your_api_key_here
+```
+
+---
+
+## Requirements
+
+* Python 3.11+
+* LaTeX distribution installed
+
+  * TeX Live
+  * MiKTeX
+* Gemini API key
+
+---
+
+## Translation Prompting
+
+The project uses structured prompts to ensure:
+
+* valid JSON responses
+* LaTeX syntax preservation
+* deterministic output formatting
+* path synchronization between languages
+
+---
+
+## Example Input
+
+```text
+content/pt/introduction.tex
+```
+
+---
+
+## Example Output
+
+```text
+content/en/introduction.tex
+```
+
+---
+
+## Technologies Used
+
+* Python
+* LaTeX
+* Google Gemini API
+* Git
+* pathlib
+* subprocess
+
+---
