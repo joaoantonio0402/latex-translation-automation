@@ -1,1 +1,10 @@
-cover_letter
+introduction
+history_of_artificial_intelligence
+machine_learning
+supervised_learning
+unsupervised_learning
+reinforcement_learning
+industrial_applications
+ethical_challenges
+future_of_artificial_intelligence
+conclusion
