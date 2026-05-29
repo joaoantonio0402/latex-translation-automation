@@ -55,7 +55,7 @@ def save_output(language: str, tex: str):
     output_dir = OUTPUT_DIR / language
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    tex_path = output_dir / f"CV_João_Gonçalves_2026.tex"
+    tex_path = output_dir / f"auto_translated_file.tex"
 
     tex_path.write_text(tex, encoding="utf-8")
 
@@ -81,3 +81,9 @@ def build(language: str):
     tex_path = save_output(language, tex)
 
     compile_pdf(tex_path)
+
+# build("pt")
+# build("es")
+
+# build("de")
+# build("en")

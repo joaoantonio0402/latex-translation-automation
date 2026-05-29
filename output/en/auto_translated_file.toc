@@ -1,0 +1,11 @@
+\babel@toc {brazil}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {section}{\numberline {2}History of Artificial Intelligence}{2}{section.2}%
+\contentsline {section}{\numberline {3}Machine Learning}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Supervised Learning}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Unsupervised Learning}{2}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Reinforcement Learning}{3}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Industrial Applications}{3}{section.4}%
+\contentsline {section}{\numberline {5}Ethical Challenges}{3}{section.5}%
+\contentsline {section}{\numberline {6}Future of Artificial Intelligence}{4}{section.6}%
+\contentsline {section}{\numberline {7}Conclusion}{4}{section.7}%
