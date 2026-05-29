@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1780085261.00827 "c:/dev/latex-translation-automation/output/es/auto_translated_file.tex" "auto_translated_file.pdf" "auto_translated_file" 1780085271.18815 0
+["pdflatex"] 1780085345.75214 "c:/dev/latex-translation-automation/output/es/auto_translated_file.tex" "auto_translated_file.pdf" "auto_translated_file" 1780085350.73952 0
   "C:/Users/Usuário/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1780080773 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/Usuário/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1780080834 28976 e890405f882bdcf901b56f6223f1ecff ""
   "C:/Users/Usuário/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1780080781 31952 1e8ae47fbeae4dc3ab18949b287f4446 ""
@@ -70,12 +70,11 @@
   "C:/Users/Usuário/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1751104012 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
   "C:/Users/Usuário/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/Usuário/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "C:/dev/latex-translation-automation/output/es/auto_translated_file.tex" 1780085257 7222 1210fdfd44cb21dc6703239fa5c01556 ""
-  "auto_translated_file.aux" 1780085270 1535 9e5caef9925cedaf723a8a0e713a0ef1 "pdflatex"
-  "auto_translated_file.out" 1780085270 1691 83ad8af0540d207f89342874abd0d8f3 "pdflatex"
-  "auto_translated_file.tex" 1780085257 7222 1210fdfd44cb21dc6703239fa5c01556 ""
-  "auto_translated_file.toc" 1780085270 855 e75b7224980b75408b95518e58d801e5 "pdflatex"
-  "c:/dev/latex-translation-automation/output/es/auto_translated_file.tex" 1780085257 7222 1210fdfd44cb21dc6703239fa5c01556 ""
+  "auto_translated_file.aux" 1780085350 1535 9e5caef9925cedaf723a8a0e713a0ef1 "pdflatex"
+  "auto_translated_file.out" 1780085350 1691 83ad8af0540d207f89342874abd0d8f3 "pdflatex"
+  "auto_translated_file.tex" 1780085344 7218 e877828bf1ec932b35e7e8de69462040 ""
+  "auto_translated_file.toc" 1780085350 855 e75b7224980b75408b95518e58d801e5 "pdflatex"
+  "c:/dev/latex-translation-automation/output/es/auto_translated_file.tex" 1780085344 7218 e877828bf1ec932b35e7e8de69462040 ""
   (generated)
   "auto_translated_file.aux"
   "auto_translated_file.log"
