@@ -1,0 +1,33 @@
+Translate the following LaTeX content from Portuguese to {target_languages}.
+
+Input format:
+
+Example input:
+{{
+    "content/pt/resume.tex": "<latex content>"
+}}
+
+Output format:
+
+Replace:
+- "content/pt/" with the corresponding target language path
+
+Example:
+- "content/pt/resume.tex"
+->
+- "content/en/resume.tex"
+
+Rules:
+- Preserve all LaTeX commands.
+- Do not modify syntax.
+- Translate only readable text.
+- Only translate. Do not modify order, word choice.
+- The answer must be onlt the translation, no explanation
+- Do not use markdown fences.
+- Do not write ```json.
+- Do not explain anything.
+- Do not include any text before or after the JSON.
+
+The response must be directly parseable by Python json.loads().
+
+Content:
